@@ -1,5 +1,5 @@
 const allowedOrigins = [
-    'https://puparty.pages.dev/',
+    'https://puparty.pages.dev',
 ];
 
 const corsOptions = {
