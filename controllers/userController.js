@@ -10,7 +10,7 @@ userController.create = async (req, res) => {
         }
         const find = await Model.findOne({ email: req.body.email });
         if (find) {
-            res.json({ success: 1, message: "Already registered", ...find })
+            res.json({ success: 1, message: "Already registered", ...find["_doc"] })
             return;
         }
         const result = await Model.create(req.body);
